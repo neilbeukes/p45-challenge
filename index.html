@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <script src="main.js"></script>
+
+    <!-- Custom font (Google - Open sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="user-container">
+            <div class="user-picture-container">
+                <img src="assets/face.svg" class="user-picture">
+            </div>
+            <div class="user-heading">
+                <h1 class="mb"><strong>Front-end challenge!</strong></h1>
+                <h3>This is a design that you will need to code up and impress us.</h3>
+            </div>
+            <div class="user-expand-button-container">
+                <a class="show-button" href="#form-container" onclick="toggle()"><img src="assets/arrow.svg"
+                        class="expand-button" id="expand-button"></a>
+            </div>
+        </div>
+        <form class="form-container">
+            <div class="slide-panel hide" id="slide-panel">
+                <div class="slide-panel-inner-container">
+                    <h1>My world today</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed finibus orci. Donec imperdiet
+                        orci non lacus luctus interdum. Nam mattis tempus justo. Sed dapibus tellus in magna egestas
+                        auctor pretium quis metus.
+                        Morbi vitae tempus risus. In augue enim, sodales eu tempus in, malesuada porta libero. <span
+                            class="highlighted-text">Pellentesquetristique</span> vitae lorem id condimentum.
+                        Proin et vulputate erat. Sed sagittis diam gravida viverra sagittis. Vestibulum posuere
+                        vulputate ligula, sit amet egestas sapien. Nunc pulvinar dictum finibus. Sed diam mauris,
+                        eleifend et.</p>
+                </div>
+            </div>
+            <div class="inner-form-container" id="form-container">
+                <div class="form-control-container">
+                    <p class="label">Name</p>
+                    <input class="input" type="text"></input>
+                </div>
+                <div class="form-control-container">
+                    <p class="label">Gender</p>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <label>
+                                <input type="radio" name="gender" value="male">
+                                <img class="male" src="assets/mars-symbol.svg">
+                            </label>
+                            <p class="radio-label male">Male</p>
+                        </div>
+                        <div class="radio-item">
+                            <label>
+                                <input type="radio" name="gender" value="female">
+                                <img class="female" src="assets/venus-symbol.svg">
+                            </label>
+                            <p class="radio-label female">Female</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-control-container">
+                    <p class="label">Date of Birth</p>
+                    <input class="input" type="date">
+                    </input>
+                </div>
+                <div class="form-control-container">
+                    <p class="label">Email</p>
+                    <input class="input" type="email" required></input>
+                    <span class="invalid-text">Invalid email address</span>
+                    <span class="notification-dot"></span>
+                </div>
+                <div class="form-control-container">
+                    <p class="label">Mobile</p>
+                    <input class="input" type="text"></input>
+                </div>
+                <div class="form-control-container">
+                    <p class="label">Customer ID</p>
+                    <input class="input" type="text"></input>
+                </div>
+                <div class="form-control-container mt-l">
+                    <p class="label">Membership</p>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <label>
+                                <input type="radio" name="membership" value="classic">
+                                <img class="classic" src="assets/card.svg">
+                            </label>
+                            <p class="radio-label male">Classic</p>
+                        </div>
+                        <div class="radio-item">
+                            <label>
+                                <input type="radio" name="membership" value="silver">
+                                <img class="silver" src="assets/card.svg">
+                            </label>
+                            <p class="radio-label female">Silver</p>
+                        </div>
+                        <div class="radio-item">
+                            <label>
+                                <input type="radio" name="membership" value="gold">
+                                <img class="gold" src="assets/card.svg">
+                            </label>
+                            <p class="radio-label female">Gold</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="button ml" type="reset" value="reset">CANCEL</button>
+                    <button class="button submit ml">SAVE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

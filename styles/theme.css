@@ -1,0 +1,18 @@
+/* Themes */
+:root {
+    --foreground-primary: #FFD500;
+    --foreground-secondary-expanded: #FF9200;
+    --foreground-secondary: #FFF;
+    --background: #E6E6E6;
+    --labels: #525759;
+    --text-primary: #383838;
+    --input-background: #F5F8F9;
+    --highlight: #FFA42B;
+    --primary-button: #60E6C5;
+    --selected-input-background: #B1BFCD;
+    --input-text: #B1BFCD;
+    --radio-gold: #cd950c;
+    --radio-silver: #8c8c8c;
+    --radio-classic: #b0e2ff;
+    --invalid: #FF9200;
+}
